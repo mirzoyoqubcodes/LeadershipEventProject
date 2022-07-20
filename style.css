@@ -7,15 +7,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-nav{
-    width: 100%;
-    top: 0;
+nav{ 
     position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #273053;
     height: 10vh;
     display: flex;
     place-items: center;
-
+    z-index: 999;
 }
 nav>main{
     width: 80%;
@@ -32,9 +32,11 @@ nav>main{
 .logo>i{
     font-size: 2.5rem;
     margin-right: 5px;
+    cursor: pointer;
 }
 .logo_text h3{
     font-weight: 600;
+    cursor: pointer;
 }
 
 .burger{
@@ -42,6 +44,7 @@ nav>main{
     margin-right: 2rem;
     color: white;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .nav_links{
@@ -49,16 +52,17 @@ nav>main{
     align-items: center;
 }
 
-
 .nav_links>ul{
 display: flex;
 list-style: none;
 color: white;
 margin-right:20px;
 }
+
 .nav_links>ul>li{
     margin: 0 10px;
 }
+
 .nav_links>button{
     all: unset;
     padding: 10px 20px;
@@ -67,9 +71,138 @@ margin-right:20px;
     border-radius: 18px;
     transition: 0.5s ease;
 }
+
 .nav_links>button:hover{
     background-color:#0dcaf0;
 }
+
+header{
+    position: relative;
+    height: 100vh; 
+}
+
+header>video{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+    z-index: 1;
+}
+
+header>main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
+}
+
+.header_title>h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.header_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.header_buttons>button{
+    all: unset;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+}
+
+.header_title>button{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.header_title>button:hover{
+    background-color: #0dcaf0;
+    color: white;
+}
+
+.highlights_container{
+    background-color:#273053;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 1rem;
+    gap: 20px;
+}
+
+.highlight{
+    width: 440px;
+    height: 300px;
+    position: relative;
+    margin: 0 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.highlight_icon{
+    display: none;  
+}
+
+.highlight>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+.highlight_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.highlight:hover .highlight_img{
+transform: scale(1.1);
+}
+
+.highlight:hover .highlight_content{
+    display: none;
+}
+
+.highlight:hover .highlight_icon{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgb(228, 1, 1);
+    cursor: pointer;
+    
+}
+
+.highlight:hover .highlight_icon:hover{
+    transition: 0.2s ease;
+    color: white;
+}
+
 
 @media only screen and (max-width:900px){
     .nav_links>ul{
@@ -78,6 +211,11 @@ margin-right:20px;
     .burger{
         display: block;
     }
+    .highlight{
+        margin: 10px 0;
+        padding: 0 15px;
+    }
+
 }
 
 @media only screen and (max-width: 768px){
@@ -85,5 +223,7 @@ margin-right:20px;
         display: none;
     }
 }
+
+
 
 
