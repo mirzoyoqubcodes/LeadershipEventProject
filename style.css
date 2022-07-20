@@ -1,13 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-nav{ 
+nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -17,29 +17,33 @@ nav{
     place-items: center;
     z-index: 999;
 }
-nav>main{
+
+nav>main {
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     color: #0dcaf0;
 }
-.logo>i{
+
+.logo>i {
     font-size: 2.5rem;
     margin-right: 5px;
     cursor: pointer;
 }
-.logo_text h3{
+
+.logo_text h3 {
     font-weight: 600;
     cursor: pointer;
 }
 
-.burger{
+.burger {
     display: none;
     margin-right: 2rem;
     color: white;
@@ -47,49 +51,49 @@ nav>main{
     cursor: pointer;
 }
 
-.nav_links{
+.nav_links {
     display: flex;
     align-items: center;
 }
 
-.nav_links>ul{
-display: flex;
-list-style: none;
-color: white;
-margin-right:20px;
+.nav_links>ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    margin-right: 20px;
 }
 
-.nav_links>ul>li{
+.nav_links>ul>li {
     margin: 0 10px;
 }
 
-.nav_links>button{
+.nav_links>button {
     all: unset;
     padding: 10px 20px;
-    background-color:#0d6efd;
+    background-color: #0d6efd;
     color: white;
     border-radius: 18px;
     transition: 0.5s ease;
 }
 
-.nav_links>button:hover{
-    background-color:#0dcaf0;
+.nav_links>button:hover {
+    background-color: #0dcaf0;
 }
 
-header{
+header {
     position: relative;
-    height: 100vh; 
+    height: 100vh;
 }
 
-header>video{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+header>video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: 1;
 }
 
-header>main{
+header>main {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -102,19 +106,19 @@ header>main{
     background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
 }
 
-.header_title>h1{
+.header_title>h1 {
     color: white;
     font-size: 3rem;
 }
 
-.header_buttons{
+.header_buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2rem;
 }
 
-.header_buttons>button{
+.header_buttons>button {
     all: unset;
     padding: 10px 20px;
     border: 1px solid white;
@@ -122,7 +126,7 @@ header>main{
     color: white;
 }
 
-.header_title>button{
+.header_title>button {
     width: 50px;
     height: 50px;
     padding: 1rem;
@@ -133,13 +137,13 @@ header>main{
     cursor: pointer;
 }
 
-.header_title>button:hover{
+.header_title>button:hover {
     background-color: #0dcaf0;
     color: white;
 }
 
-.highlights_container{
-    background-color:#273053;
+.highlights_container {
+    background-color: #273053;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -147,7 +151,7 @@ header>main{
     gap: 20px;
 }
 
-.highlight{
+.highlight {
     width: 440px;
     height: 300px;
     position: relative;
@@ -156,11 +160,11 @@ header>main{
     text-align: center;
 }
 
-.highlight_icon{
-    display: none;  
+.highlight_icon {
+    display: none;
 }
 
-.highlight>img{
+.highlight>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -168,25 +172,25 @@ header>main{
     z-index: 0;
 }
 
-.highlight_content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: white;
-  font-size: 1.7rem;
+.highlight_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 1.7rem;
 }
 
-.highlight:hover .highlight_img{
-transform: scale(1.1);
+.highlight:hover .highlight_img {
+    transform: scale(1.1);
 }
 
-.highlight:hover .highlight_content{
+.highlight:hover .highlight_content {
     display: none;
 }
 
-.highlight:hover .highlight_icon{
+.highlight:hover .highlight_icon {
     display: block;
     position: absolute;
     top: 50%;
@@ -195,35 +199,133 @@ transform: scale(1.1);
     font-size: 4rem;
     color: rgb(228, 1, 1);
     cursor: pointer;
-    
+
 }
 
-.highlight:hover .highlight_icon:hover{
+.highlight:hover .highlight_icon:hover {
     transition: 0.2s ease;
     color: white;
 }
 
+/*story section*/
 
-@media only screen and (max-width:900px){
-    .nav_links>ul{
+.story_section {
+    border: 1px solid red;
+    padding: 5rem 0;
+}
+
+.story_section>main {
+    border: 1px solid blue;
+    width: 80%;
+    margin: auto;
+}
+
+.story_section>main>h1 {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+}
+
+.story_container {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.story {
+    border: 2px solid black;
+    width: 45%;
+}
+
+.story>h1 {
+    font-size: 2rem;
+}
+
+.story>p {
+    margin: 1.5rem 0;
+    color: gray;
+    line-height: 24px;
+}
+
+.story>button:nth-child(3) {
+    all: unset;
+    color: #0dcaf0;
+    border: 2px solid #0dcaf0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-right: 20px;
+}
+
+.story>button:nth-child(3):hover {
+    background-color: #0dcaf0;
+    color: white;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+}
+
+.story>button:nth-child(4) {
+    all: unset;
+    background-color: #273053;
+    border: 2px solid #273053;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-right: 20px;
+}
+
+.story>button:nth-child(4):hover {
+    background-color: #0dcaf0;
+    color: white;
+    border: 2px solid #0dcaf0;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+}
+
+.story2 {
+    width: 45%;
+    border: 2px solid yellow;
+}
+
+.story2>h1 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.story2_line {
+    height: 0.5px;
+    background-color: rgb(202, 202, 202);
+    margin: 2rem 0;
+}
+
+
+
+/*story section*/
+
+
+
+
+@media only screen and (max-width:900px) {
+    .nav_links>ul {
         display: none;
     }
-    .burger{
+
+    .burger {
         display: block;
     }
-    .highlight{
+
+    .highlight {
         margin: 10px 0;
         padding: 0 15px;
     }
 
 }
 
-@media only screen and (max-width: 768px){
-    .nav_links>button{
+@media only screen and (max-width: 768px) {
+    .nav_links>button {
         display: none;
     }
 }
-
-
-
-
