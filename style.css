@@ -209,7 +209,6 @@ header>main {
 
 /*story section*/
 .story_section {
-    border: 1px solid red;
     padding: 5rem 0;
 }
 
@@ -300,10 +299,14 @@ header>main {
 .avatars {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-between;
+}
 
 
+
+.avatar-group {
+    position: relative;
+    min-width: 190px;
 
 }
 
@@ -312,11 +315,6 @@ header>main {
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.avatar-group {
-    position: relative;
-
 }
 
 .avatar-group>img:nth-child(2) {
@@ -334,11 +332,7 @@ header>main {
     left: 135px;
 }
 
-.avatars>p {
-    padding-left: 150px;
-    /* width: 100%;
-    text-align: center; */
-}
+
 
 
 
@@ -384,5 +378,11 @@ header>main {
 @media only screen and (max-width: 768px) {
     .nav_links>button {
         display: none;
+    }
+
+    .avatars {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
