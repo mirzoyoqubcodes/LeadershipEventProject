@@ -332,11 +332,144 @@ header>main {
     left: 135px;
 }
 
-
-
-
-
 /*story section*/
+
+/*speakrs section*/
+.speakers-section {
+    background-color: #F0F8FF;
+    padding: 5rem 0;
+    height: 800px;
+}
+
+.speakers-title-container {
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.speakers-title {
+    border: 2px solid black;
+    width: 500px;
+}
+
+.speakers-title>p {
+    margin: 1.5rem 0;
+    color: gray;
+    line-height: 24px;
+}
+
+.main-speaker {
+    position: relative;
+    border: 2px solid green;
+    width: 500px;
+    height: 400px;
+    background-image: url(https://templatemo.com/templates/templatemo_575_leadership_event/images/avatar/happy-asian-man-standing-with-arms-crossed-grey-wall.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main-speaker>p {
+    position: absolute;
+    padding: 5px 8px;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    right: 10px;
+    top: 10px;
+}
+
+.speaker-info {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    left: 5%;
+    background-color: white;
+
+}
+
+.overlay {
+    width: 10px;
+    height: 100%;
+    background-color: #0dcaf0;
+    position: absolute;
+    z-index: 0;
+    transition: 1s ease;
+}
+
+.speaker_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    position: relative;
+    z-index: 1;
+    padding: 10px 20px;
+}
+
+.main-speaker:hover .overlay {
+    width: 100%;
+}
+
+.main-speaker:hover .speaker_content>div:nth-child(1) {
+    color: white;
+}
+
+.icon_container {
+    visibility: hidden;
+    display: flex;
+    gap: 10px;
+
+}
+
+.icon-wrapper {
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    /* transition: 0.1s ease; */
+}
+
+.icon-wrapper:hover {
+    background: transparent;
+    color: white;
+}
+
+.main-speaker:hover .icon_container {
+    visibility: visible;
+    transition-delay: 1s;
+
+}
+
+
+
+/*speakrs section*/
+
+
+@media only screen and (max-width:1200px) {
+    .speakers-title-container {
+        flex-direction: column;
+    }
+
+    .speakers-title {
+        width: 100%;
+    }
+
+    .main-speaker {
+        width: 100%;
+    }
+
+
+}
 
 
 
@@ -384,5 +517,13 @@ header>main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .speakers-title-container {
+        width: 90%;
+    }
+
+    .speaker_content {
+        flex-direction: column;
     }
 }
