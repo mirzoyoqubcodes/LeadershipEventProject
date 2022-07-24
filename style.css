@@ -342,7 +342,6 @@ header>main {
 }
 
 .speakers-title-container {
-    border: 1px solid red;
     width: 80%;
     margin: auto;
     display: flex;
@@ -352,7 +351,6 @@ header>main {
 }
 
 .speakers-title {
-    border: 2px solid black;
     width: 500px;
 }
 
@@ -364,7 +362,6 @@ header>main {
 
 .main-speaker {
     position: relative;
-    border: 2px solid green;
     width: 500px;
     height: 400px;
     background-image: url(https://templatemo.com/templates/templatemo_575_leadership_event/images/avatar/happy-asian-man-standing-with-arms-crossed-grey-wall.jpg);
@@ -450,8 +447,6 @@ header>main {
 
 }
 
-
-
 /*speakrs section*/
 
 
@@ -470,9 +465,6 @@ header>main {
 
 
 }
-
-
-
 
 @media only screen and (max-width:900px) {
     .nav_links>ul {
@@ -523,7 +515,13 @@ header>main {
         width: 90%;
     }
 
-    .speaker_content {
-        flex-direction: column;
+    .speaker-name {
+        font-size: 13px;
     }
+
+    .icon {
+        font-size: 13px;
+        border: 1px solid red;
+    }
+
 }
