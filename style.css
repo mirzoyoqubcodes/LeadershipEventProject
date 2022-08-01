@@ -639,6 +639,57 @@ header > main {
 }
 /*timetable section*/
 
+.baner_section {
+  background-image: linear-gradient(
+      rgba(37, 37, 37, 0.6),
+      rgba(37, 37, 37, 0.6)
+    ),
+    url(https://templatemo.com/templates/templatemo_575_leadership_event/images/terren-hurst-blgOFmPIlr0-unsplash.jpg);
+  height: 400px;
+  object-fit: cover;
+  background-position: center;
+  margin-bottom: 500px;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.baner_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.baner_register {
+  max-width: 600px;
+  color: white;
+}
+
+.baner_register > h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.baner_register > p {
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.baner_container > button {
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.baner_container > button:hover {
+  background-color: #0dcaf0;
+  color: white;
+}
 @media only screen and (max-width: 1200px) {
   .speakers-title-container {
     flex-direction: column;
@@ -693,6 +744,13 @@ header > main {
 
   .info {
     width: 100%;
+  }
+
+  .baner_container {
+    flex-direction: column;
+  }
+  .baner_register {
+    text-align: center;
   }
 }
 
