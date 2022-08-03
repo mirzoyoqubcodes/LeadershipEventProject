@@ -767,6 +767,98 @@ header>main {
 
 /*price section*/
 
+/*contacts section*/
+.contacts-section {
+    background-color: #F0F8FF;
+    padding: 5rem 0;
+}
+
+.contacts-section>main {
+    width: 80%;
+    margin: auto;
+}
+
+.contacts-section>main>h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.container-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.maps {
+    width: 50%;
+}
+
+.address {
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.address>h1 {
+    padding: 1.5rem 2rem;
+    background-color: #273053;
+    color: white;
+    font-size: 2rem;
+}
+
+.address-info {
+    padding: 2rem;
+}
+
+.address-info>div {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+
+.address-info>div>i {
+    font-size: 2rem;
+    margin-right: 12px;
+}
+
+.address-info>div:nth-child(2) {
+    font-size: 1.5rem;
+    color: gray;
+    align-items: center;
+}
+
+.address-info>div:nth-child(2)>i {
+    font-size: 1.5rem;
+}
+
+.address-info>div:nth-child(3) {
+    font-size: 1.5rem;
+    color: gray;
+    align-items: center;
+}
+
+.address-info>div:nth-child(3)>i {
+    font-size: 1.5rem;
+}
+
+/*contacts section*/
+@media only screen and (max-width: 1464px) {
+    .container-contacts {
+        flex-direction: column;
+    }
+
+    .maps {
+        width: 100%;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+}
+
 @media only screen and (max-width: 1200px) {
     .speakers-title-container {
         flex-direction: column;
