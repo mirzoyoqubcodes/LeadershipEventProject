@@ -903,6 +903,83 @@ header>main {
     font-weight: 600;
 }
 
+footer{
+    padding: 6rem 9.5rem;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 3rem 0;
+    border-bottom: 1px solid grey;
+    
+}
+
+.footer-icons i{
+    margin: 0 17px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.footer-icons i:hover{
+    color:#0dcaf0;
+}
+
+.footer-text-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    /* padding-bottom: 7rem; */
+
+}
+
+.footer-text-container ul{
+    display: flex;
+    list-style: none;
+}
+.footer-text-container ul li{
+    margin-right: 16px;
+    color: gray;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s ease;
+    font-weight: 500;
+}
+
+.footer-text-container ul li:hover{
+    color: #0dcaf0;
+}
+
+
+.footer-text{
+    display: flex;
+    color: grey;
+}
+
+.footer-text p{
+    font-size: 15px;
+}
+
+.footer-text>button{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    margin: 0 3rem 0 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #f0f8ff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.footer-text>button:hover{
+    background-color: #0dcaf0;
+    color: white;
+}
+
 /*contacts section*/
 @media only screen and (max-width: 1464px) {
     .container-contacts {
