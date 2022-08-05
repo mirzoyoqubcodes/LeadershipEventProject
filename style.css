@@ -7,6 +7,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -65,6 +69,12 @@ nav>main {
 
 .nav_links>ul>li {
     margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav_links>ul>li:hover{
+    color: #0dcaf0;
 }
 
 .nav_links>button {
@@ -74,6 +84,7 @@ nav>main {
     color: white;
     border-radius: 18px;
     transition: 0.5s ease;
+    cursor: pointer;
 }
 
 .nav_links>button:hover {
@@ -141,6 +152,8 @@ header>main {
     background-color: #0dcaf0;
     color: white;
 }
+
+
 
 .highlights_container {
     background-color: #273053;
@@ -843,6 +856,154 @@ header>main {
     font-size: 1.5rem;
 }
 
+
+.form-section{
+    background-image: url(https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 1rem;
+}
+.form-section form{
+    width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.form-title{
+    padding: 2rem;
+    background-color: #273053;
+    color: white;
+    font-size: 1.5rem; 
+}
+.form-inputs{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: white;
+
+
+}
+
+.form-inputs input{
+    padding: 15px 20px;
+    background-color: #f0f8ff;
+    border: none;
+    border-radius: 3px;
+}
+
+.textarea{
+    grid-column: 1/span 3;
+    background-color: #f0f8ff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 3px;
+}
+
+.form-button{
+    grid-column: 1/span 3;
+    background-color: #0dcaf0 !important;
+    border-radius: 25px !important;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+footer{
+    padding: 6rem 9.5rem;
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 3rem 0;
+    
+}
+
+.footer-icons i{
+    margin: 1rem 17px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.footer-icons i:hover{
+    color:#0dcaf0;
+}
+
+.footer-line{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin: auto;
+}
+
+.footer-text-container{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    /* padding-bottom: 7rem; */
+
+}
+
+.footer-text-container ul{
+    display: flex;
+    list-style: none;
+}
+.footer-text-container ul li{
+    margin-right: 16px;
+    color: gray;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s ease;
+    font-weight: 500;
+}
+
+.footer-text-container ul li:hover{
+    color: #0dcaf0;
+}
+
+
+.footer-text{
+    display: flex;
+    color: grey;
+}
+
+.footer-text p{
+    font-size: 15px;
+}
+
+.nav_to_top{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    margin: 1rem 3rem 0 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #f0f8ff;
+    transition: 0.5s ease;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.nav_to_top:hover{
+    background-color: #0dcaf0;
+    color: white;
+}
+
 /*contacts section*/
 @media only screen and (max-width: 1464px) {
     .container-contacts {
@@ -965,5 +1126,39 @@ header>main {
 
     .speakers-group {
         width: 88%;
+    }
+    .form-inputs > input[type='text'] {
+        grid-column: 1;
+        grid-column: 1/4;
+    }
+
+    footer{
+        padding: 1rem 4rem;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-text-container{
+        flex-direction: column;
+    }
+
+    .footer-line{
+        width: 100%;
+    }
+
+    .footer-text{
+        text-align: center;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .footer-text-container ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-text-container button{
+        margin: auto;
     }
 }
