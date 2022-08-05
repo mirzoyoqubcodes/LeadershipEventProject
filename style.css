@@ -69,6 +69,12 @@ nav>main {
 
 .nav_links>ul>li {
     margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav_links>ul>li:hover{
+    color: #0dcaf0;
 }
 
 .nav_links>button {
@@ -78,6 +84,7 @@ nav>main {
     color: white;
     border-radius: 18px;
     transition: 0.5s ease;
+    cursor: pointer;
 }
 
 .nav_links>button:hover {
@@ -145,6 +152,8 @@ header>main {
     background-color: #0dcaf0;
     color: white;
 }
+
+
 
 .highlights_container {
     background-color: #273053;
